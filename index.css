@@ -1,0 +1,196 @@
+img {
+  margin: auto;
+  position: relative;
+  display: block;
+}
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto 50px 50px 50px 50px auto;
+  grid-template-rows: 25px 150px auto;
+  margin: auto;
+}
+.border {
+  height: 150px;
+}
+
+.top {
+  height: 25px;
+  width: 50px;
+  background: grey;
+  border-bottom-left-radius: 100% 200%;
+  border-bottom-right-radius: 100% 200%;
+  border-style: solid;
+  border-color: black;
+}
+
+.red {
+  background: red;
+}
+.green {
+  background: green;
+}
+.yellow {
+  background: yellow;
+}
+.blue {
+  background: blue;
+}
+
+.bottomBell {
+  background: transparent;
+  height: 155px;
+  width: 50px;
+  position: relative;
+  top: 24px;
+  right: 5px;
+  border-style: solid;
+  border-color: black;
+}
+.curve {
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+}
+
+#GriffinTDDor {
+  width: 50px;
+  align-self: end;
+  animation-name: motion;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#Slytherin {
+  width: 50px;
+  align-self: end;
+  animation-name: motion;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#HTTPufflepuff {
+  width: 50px;
+  align-self: end;
+  animation-name: motion;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#RavenCSSlaw {
+  width: 50px;
+  align-self: end;
+  animation-name: motion;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes motion {
+  0% {
+    height: 0px;
+    border-top-left-radius: 0% 100%;
+    border-top-right-radius: 0% 100%;
+  }
+}
+
+.button {
+  background: grey;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.griffinbutton {
+  background: maroon;
+  color: gold;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.griffinlist {
+  display: none;
+  background: maroon;
+  color: gold;
+  height: 200px;
+  width: 500px;
+  left: 100px;
+  position: fixed;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.griffinbutton:hover .griffinlist {
+  display: block;
+}
+
+.slytherinbutton {
+  background: darkgreen;
+  color: silver;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+.slytherinlist {
+  display: none;
+  background: darkgreen;
+  color: silver;
+  height: 200px;
+  width: 500px;
+  left: 100px;
+  position: fixed;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.slytherinbutton:hover .slytherinlist {
+  display: block;
+}
+
+.hufflebutton {
+  background: yellow;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+.hufflelist {
+  display: none;
+  background: yellow;
+  height: 200px;
+  width: 500px;
+  right: 100px;
+  position: fixed;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.hufflebutton:hover .hufflelist {
+  display: block;
+}
+
+.ravenbutton {
+  background: darkblue;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+.ravenlist {
+  display: none;
+  background: darkblue;
+  color: white;
+  height: 200px;
+  width: 500px;
+  right: 100px;
+  position: fixed;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.ravenbutton:hover .ravenlist {
+  display: block;
+}
